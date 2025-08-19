@@ -15,6 +15,7 @@ header {
     margin-top: 10px;
     font-size: 2rem;
     z-index: 10;
+    text-decoration: none;
 }
 
 nav ul {
@@ -51,7 +52,7 @@ nav ul li {
     background: lightseagreen;
     color: #fff;
     position: fixed;
-    top: 80vh;
+    top: 85vh;
     left: 80vw;
     display: flex;
     flex-direction: column;
@@ -76,19 +77,56 @@ main aside {
     justify-content: left;
     padding-top: 50px;
     max-width: 80vw;
-
+    position: relative;
 }
 
 
 main aside img {
     width: 100%;
-    min-width: 200px;
+    min-width: 150px;
     object-fit: contain;
+    background: lightgreen;
+
+}
+
+.contentImg {
+    position: relative;
+    z-index: 1;
+
+}
+
+
+
+.contentImg>div:first-child {
+    position: absolute;
+    content: '⬇';
+    font-size: 20px;
+    color: #fff;
+    max-width: 40px;
+    max-height: 40px;
+    z-index: 1;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.contentImg>div:first-child>img {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    background: red;
+    cursor: pointer;
 }
 
 main>aside>div:first-child {
     margin-top: 50px;
-    max-width: 100;
+
     display: grid;
     grid-template-columns: 2fr 2fr;
     text-align: center;
@@ -126,7 +164,6 @@ main>aside>div:nth-child(2)>h2 {
     text-align: center;
     font-weight: bold;
 }
-
 
 .container {
     position: relative;
@@ -325,12 +362,23 @@ footer img {
         width: 70px;
 
     }
+
+    .idioma {
+        width: 100px;
+        height: 100px;
+        font-size: 25px;
+    }
 }
 
 @media (width > 1000px) {
     main aside {
-        margin-top: 100px;
+        margin-top: 0px;
         grid-template-columns: 1fr 1fr;
-        align-items: center
+        align-items: center;
+        justify-content: center;
+    }
+
+    main aside img {
+        min-width: 300px;
     }
 }
