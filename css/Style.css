@@ -1,6 +1,7 @@
 :root {
     --background: #000;
     --blanco: #fff;
+    --300: #a1aeff;
     --400: #7e87fb;
     --950: #1e1a4c;
     --700: #4435cd;
@@ -42,7 +43,6 @@ nav ul {
     font-size: 10px;
     color: #000000;
     background-color: var(--700);
-    color: var(--950);
 }
 
 nav ul a {
@@ -58,6 +58,7 @@ nav ul li {
 
 .icon {
     width: 50px;
+    filter: invert(100%);
 }
 
 .idioma {
@@ -100,7 +101,7 @@ main aside img {
     width: 100%;
     min-width: 150px;
     object-fit: contain;
-    background: var(--400);
+    filter: invert(100%);
 
 }
 
@@ -126,6 +127,10 @@ main aside img {
     align-content: center;
     flex-wrap: wrap;
     overflow: hidden;
+
+    border-radius: 10px;
+
+
 }
 
 .contentImg>div:first-child>img {
@@ -133,7 +138,6 @@ main aside img {
     height: 40px;
     margin: 0;
     padding: 0;
-    background: var(--400);
     cursor: pointer;
 }
 
@@ -242,7 +246,7 @@ main>aside>div:nth-child(2)>h2 {
 
 }
 
-.frontCard>a {
+.backCard>a {
     color: var(--blanco);
 
 }
@@ -375,6 +379,7 @@ footer img {
         width: 100px;
         height: 100px;
         font-size: 25px;
+        top: 80vh;
     }
 
 }
