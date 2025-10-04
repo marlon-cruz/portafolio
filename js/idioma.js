@@ -150,14 +150,14 @@ const proyectosMenu4 = document.getElementById("btnAppWeb");
 
 const proyecMenuDatos = [
     {
-        titulo: "Proyectos",
+        titulo: "Proyectos academicos",
         menu1: "Software",
         menu2: "Sitio Web",
         menu3: "Aplicación movil",
         menu4: "Aplicación Web",
     },
     {
-        titulo: "Projects",
+        titulo: "Academic projects",
         menu1: "Software",
         menu2: "Website",
         menu3: "Mobile App",
@@ -219,66 +219,66 @@ const proyectDescripcionDatos = {
         "1":{
            ES: {
             titulo: "Farmacia Divino Niño - Sitio Web",
-            imagen: 'img/imgProyect/software.png',
-            descripcion: "Sistema de gestión de inventario por lote, ventas y devoluciones de medicamentos.",
+            imagen: 'img/imgProyect/web informativa.png',
+            descripcion: "Pagina web informativa para farmacia.",
             tecnologias: "Tecnologias utilizadas",
             proyectoRol: "Rol desempeñado: desarrollador Frond-end y Back-end",
             tecnoList: 
-            '<li>c#</li><li>mySQL</li><li>Vs Studio 2022</li><li>.NET</li><li>HTML</li><li>css</li>',
+            '<li>HTML</li><li>CSS</li><li>JS - JavaScript</li>',
             linkGithub: "https://github.com/marlon-cruz/proyecto",
             },
            EN: {
-            titulo: "Farmacia Divino Niño - Software",
-            imagen: "img/imgProyect/software.png",
-            descripcion: "Batch inventory management system, sales and returns of medications.",
+            titulo: "Farmacia Divino Niño - Website",
+            imagen: "img/imgProyect/web informativa.png",
+            descripcion: "Informative website for pharmacies.",
             proyectoRol: "Role played: Front-end and Back-end developer",
             tecnologias: "Technologies used",
             tecnoList: 
-            '<li>c#</li><li>mySQL</li><li>Vs Studio 2022</li><li>.NET</li><li>HTML</li><li>css</li>',
+            '<li>HTML</li><li>CSS</li><li>JS - JavaScript</li>',
             linkGithub: "https://github.com/marlon-cruz/proyecto",
             }
         },
         "2":{
            ES: {
             titulo: "PetCare - Aplicación movil",
-            imagen: 'img/imgProyect/software.png',
-            descripcion: "Sistema de gestión de inventario por lote, ventas y devoluciones de medicamentos.",
+            imagen: 'img/imgProyect/PetCare.png',
+            descripcion: "Aplicación móvil para el manejo centralizado de mascotas.",
             tecnologias: "Tecnologias utilizadas",
             proyectoRol: "Rol desempeñado: desarrollador Frond-end y Back-end",
             tecnoList: 
-            '<li>c#</li><li>mySQL</li><li>Vs Studio 2022</li><li>.NET</li><li>HTML</li><li>css</li>',
+            '<li>Java</li><li>XML</li><li>Sqlite</li>',
             linkGithub: "https://github.com/marlon-cruz/proyecto",
             },
            EN: {
-            titulo: "Farmacia Divino Niño - Software",
-            imagen: "img/imgProyect/software.png",
-            descripcion: "Batch inventory management system, sales and returns of medications.",
+            titulo: "PetCare - Mobile application",
+            imagen: "img/imgProyect/PetCare.png",
+            descripcion: "Mobile application for centralized pet management.",
             proyectoRol: "Role played: Front-end and Back-end developer",
             tecnologias: "Technologies used",
             tecnoList: 
-            '<li>c#</li><li>mySQL</li><li>Vs Studio 2022</li><li>.NET</li><li>HTML</li><li>css</li>',
+            '<li>Java</li><li>XML</li><li>Sqlite</li>',
             linkGithub: "https://github.com/marlon-cruz/proyecto",
             }
         },
         "3":{
            ES: {
             titulo: "Red de esperanza - Aplicación Web",
-            imagen: 'img/imgProyect/software.png',
-            descripcion: "Sistema de gestión de inventario por lote, ventas y devoluciones de medicamentos.",
+            imagen: 'img/imgProyect/red esperanza.jpeg',
+            descripcion: "Aplicación web diseñada como apoyo a la comunidad, donde se centraliza la información de personas desaparecidas o con necesidades.",
             tecnologias: "Tecnologias utilizadas",
             proyectoRol: "Rol desempeñado: desarrollador Frond-end y Back-end",
             tecnoList: 
-            '<li>c#</li><li>mySQL</li><li>Vs Studio 2022</li><li>.NET</li><li>HTML</li><li>css</li>',
+            '<li>c#</li><li>.NET</li><li>HTML</li><li>CSS</li><li>BootStrap</li><li>Sql Server</li>',
             linkGithub: "https://github.com/marlon-cruz/proyecto",
             },
            EN: {
-            titulo: "Farmacia Divino Niño - Software",
-            imagen: "img/imgProyect/software.png",
-            descripcion: "Batch inventory management system, sales and returns of medications.",
+            titulo: "Red de esperanza - Web Application",
+            imagen: "img/imgProyect/red esperanza.jpeg",
+            descripcion: "Web application designed to support the community, centralizing information on missing persons or those in need.",
             proyectoRol: "Role played: Front-end and Back-end developer",
             tecnologias: "Technologies used",
             tecnoList: 
-            '<li>c#</li><li>mySQL</li><li>Vs Studio 2022</li><li>.NET</li><li>HTML</li><li>css</li>',
+            '<li>c#</li><li>.NET</li><li>HTML</li><li>CSS</li><li>BootStrap</li><li>Sql Server</li>',
             linkGithub: "https://github.com/marlon-cruz/proyecto",
             }
         }

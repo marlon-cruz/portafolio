@@ -275,7 +275,7 @@ h1 {
     transition: all 0.6s ease;
 }
 .sobreMi>div>p{
-    font-size: 12px;
+    font-size: 0.6rem;
 }
 
 .proyectos{
@@ -558,7 +558,9 @@ input[type="submit"]:hover {
     .idioma {
         top: 85vh;
     }
-
+    .sobreMi>div>p{
+      font-size: 1.2rem;
+    }
     main {
         grid-row-start: 1;
         grid-row-end: 1;
