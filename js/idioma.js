@@ -29,12 +29,12 @@ function cambio(idioma){
         textIdioma.innerText = "EN"
         localStorage.setItem("idioma", "EN");
     }
-
+    contactameCambio(idioma)
     inicioCambio(idioma)
     menuCambio(idioma)
-   sobreMiCambio(idioma)
-   proyectosMenuCambio(idioma)
-   proyectosCambio(idioma)
+    sobreMiCambio(idioma)
+    proyectosMenuCambio(idioma)
+    proyectosCambio(idioma)
 }
 
 //datos y funcion de inicio
@@ -180,6 +180,48 @@ function proyectosMenuCambio(idioma){
     }
 }
 
+//datos y funciones de cambio de idioma contactame
+
+const contactameTitulo = document.getElementById("contactitulo");
+const contactameNombre = document.getElementById("contacnombre");
+const contactameCorreo = document.getElementById("contaccorreo");
+const contactameComentario = document.getElementById("contaccomentario");
+const contactameEnviar = document.getElementById("contacenviar");
+
+
+const contactoDatos = [
+    {
+        titulo: "Contactame",
+        nombre: "Nombre",
+        correo: "Correo",
+        comentario: "Comentario",
+        enviar: "Enviar",
+    },
+     {
+        titulo: "Contact me",
+        nombre: "Name",
+        correo: "Mail",
+        comentario: "Comment",
+        enviar: "Send",
+    }
+]
+function contactameCambio(idioma){
+    if(idioma == "EN"){
+        contactameTitulo.innerText = contactoDatos[0].titulo
+        contactameNombre.innerText = contactoDatos[0].nombre
+        contactameCorreo.innerText = contactoDatos[0].correo
+        contactameComentario.innerText = contactoDatos[0].comentario
+        contactameEnviar.value = contactoDatos[0].enviar
+    }else{
+        contactameTitulo.innerText = contactoDatos[1].titulo
+        contactameNombre.innerText = contactoDatos[1].nombre
+        contactameCorreo.innerText = contactoDatos[1].correo
+        contactameComentario.innerText = contactoDatos[1].comentario
+        contactameEnviar.value = contactoDatos[1].enviar
+    }
+}
+
+
 
 
 //datos y funciones de cambio de idioma de descripcion del proyecto
@@ -198,7 +240,7 @@ const proyectDescripcionDatos = {
            ES: {
             titulo: "Farmacia Divino Niño - Software",
             imagen: 'img/imgProyect/software.png',
-            descripcion: "Sistema de gestión de inventario por lote, ventas y devoluciones de medicamentos.",
+            descripcion: "Software de gestión de inventario farmacéutico, enfocado en ventas y devoluciones de medicamentos, en sus distintas presentaciones, (Pastillas, Blíster, cajas) gestionando informes y alertas sobre cantidades y vencimientos de medicamentos en inventario.",
             tecnologias: "Tecnologias utilizadas",
             proyectoRol: "Rol desempeñado: desarrollador Frond-end y Back-end",
             tecnoList: 
@@ -208,7 +250,7 @@ const proyectDescripcionDatos = {
            EN: {
             titulo: "Farmacia Divino Niño - Software",
             imagen: "img/imgProyect/software.png",
-            descripcion: "Batch inventory management system, sales and returns of medications.",
+            descripcion: "Pharmaceutical inventory management software focused on sales and returns of medications in various forms (pills, blisters, and boxes), managing reports and alerts on inventory quantities and expiration dates.",
             proyectoRol: "Role played: Front-end and Back-end developer",
             tecnologias: "Technologies used",
             tecnoList: 
@@ -220,7 +262,7 @@ const proyectDescripcionDatos = {
            ES: {
             titulo: "Farmacia Divino Niño - Sitio Web",
             imagen: 'img/imgProyect/web informativa.png',
-            descripcion: "Pagina web informativa para farmacia.",
+            descripcion: "Pagina web informativa la cual presenta información sobre la filosofía empresarial, valores e identidad de marca, además de exponer algunos de los medicamentos más solicitados, para dar visibilidad a la farmacia en la web, especificando horarios de atención y ubicación.",
             tecnologias: "Tecnologias utilizadas",
             proyectoRol: "Rol desempeñado: desarrollador Frond-end y Back-end",
             tecnoList: 
@@ -230,7 +272,7 @@ const proyectDescripcionDatos = {
            EN: {
             titulo: "Farmacia Divino Niño - Website",
             imagen: "img/imgProyect/web informativa.png",
-            descripcion: "Informative website for pharmacies.",
+            descripcion: "An informative website that presents information about the company's philosophy, values, and brand identity, as well as showcasing some of the most requested medications, to give the pharmacy visibility on the web, specifying its opening hours and location.",
             proyectoRol: "Role played: Front-end and Back-end developer",
             tecnologias: "Technologies used",
             tecnoList: 
@@ -242,21 +284,21 @@ const proyectDescripcionDatos = {
            ES: {
             titulo: "PetCare - Aplicación movil",
             imagen: 'img/imgProyect/PetCare.png',
-            descripcion: "Aplicación móvil para el manejo centralizado de mascotas.",
+            descripcion: "Aplicación móvil que permite gestionar los datos de las mascotas, crear recordatorios sobre la aplicación de medicamentos y/o citas médicas, además de conocer la ubicación de veterinarias cercanas en caso de una emergencia.",
             tecnologias: "Tecnologias utilizadas",
             proyectoRol: "Rol desempeñado: desarrollador Frond-end y Back-end",
             tecnoList: 
-            '<li>Java</li><li>XML</li><li>Sqlite</li>',
+            '<li>Java</li><li>XML</li><li>Sqlite</li><li>CouchDB</li>',
             linkGithub: "https://github.com/marlon-cruz/proyecto",
             },
            EN: {
             titulo: "PetCare - Mobile application",
             imagen: "img/imgProyect/PetCare.png",
-            descripcion: "Mobile application for centralized pet management.",
+            descripcion: "Mobile app that allows you to manage pet data, create reminders for medication administration and/or medical appointments, and locate nearby veterinary clinics in case of an emergency.",
             proyectoRol: "Role played: Front-end and Back-end developer",
             tecnologias: "Technologies used",
             tecnoList: 
-            '<li>Java</li><li>XML</li><li>Sqlite</li>',
+            '<li>Java</li><li>XML</li><li>Sqlite</li><li>CouchDB</li>',
             linkGithub: "https://github.com/marlon-cruz/proyecto",
             }
         },
@@ -264,7 +306,7 @@ const proyectDescripcionDatos = {
            ES: {
             titulo: "Red de esperanza - Aplicación Web",
             imagen: 'img/imgProyect/red esperanza.jpeg',
-            descripcion: "Aplicación web diseñada como apoyo a la comunidad, donde se centraliza la información de personas desaparecidas o con necesidades.",
+            descripcion: "Aplicación web enfocada en el servicio a la comunidad, donde las personas pueden informar sobre ciudadanos desaparecidos especificando fechas claras de desaparición, señas físicas, cantidad de fotografías, asegurando que la información pueda llegar a la mayor de personas posibles.\nLa aplicación también permite hacer anuncios de personas necesitadas, debido a desastres naturales y/o condiciones de vida adversas.",
             tecnologias: "Tecnologias utilizadas",
             proyectoRol: "Rol desempeñado: desarrollador Frond-end y Back-end",
             tecnoList: 
@@ -274,7 +316,7 @@ const proyectDescripcionDatos = {
            EN: {
             titulo: "Red de esperanza - Web Application",
             imagen: "img/imgProyect/red esperanza.jpeg",
-            descripcion: "Web application designed to support the community, centralizing information on missing persons or those in need.",
+            descripcion: "A web application focused on community service, where people can report missing citizens by specifying clear dates of disappearance, physical characteristics, and a number of photographs, ensuring that the information reaches as many people as possible.\nThe application also allows people to make announcements about people in need due to natural disasters and/or adverse living conditions.",
             proyectoRol: "Role played: Front-end and Back-end developer",
             tecnologias: "Technologies used",
             tecnoList: 

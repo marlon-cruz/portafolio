@@ -4,12 +4,30 @@
     --detalles: #3ec99b;
     --menu: #111421;
 }
+.roboto{
+  
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+h3{
+    font-family: 'Times New Roman', Times, serif;
+}
 
 body {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     background: var(--fondo);
+    font-family:"Roboto", sans-serif, system-ui, sans-serif;
 }
 
 .contenedor {
@@ -48,7 +66,7 @@ header {
     text-decoration: none;
     width: 100%;
     height: 100%;
-
+    font-size: 0.7rem;
 }
 
 h2 {
@@ -172,7 +190,6 @@ section {
 
 }
 
-
 .Inicio>img {
     position: relative;
     width: 100%;
@@ -183,10 +200,12 @@ section {
 }
 
 .contactos {
+  
     display: none;
     transition-property: display;
     transition-duration: .5s;
     transition-behavior: unset;
+    
 }
 
 
@@ -221,7 +240,7 @@ section {
 .idioma>p {
     margin: 0px;
     padding: 0px;
-    font-size: 10px;
+    font-size: 0.3rem;
 }
 
 .idioma:hover {
@@ -253,7 +272,7 @@ h2 {
 
 .sobreMi>div>p {
     margin: 10px;
-    font-size: 1.6rem;
+   font-size:1rem;
     text-align: justify;
 }
 
@@ -262,9 +281,11 @@ h1 {
 }
 
 .sobreMi>div>img {
-    max-width: 300px;
-    max-height: 200px;
+    width: 150px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
     transition: all 0.2s ease;
+
 
 }
 
@@ -273,9 +294,6 @@ h1 {
     box-shadow: 0 0 5px 5px var(--detalles);
     /* box-shadow: 2px 2px 1px 1px var(--detalles); */
     transition: all 0.6s ease;
-}
-.sobreMi>div>p{
-    font-size: 0.6rem;
 }
 
 .proyectos{
@@ -307,6 +325,7 @@ h1 {
     height: 30px;
     margin: 0px;
     padding: 0px;
+    height: 50px;
 }
 .menuProyectos>button:first-child{
     border-radius: 10px 0px 0px 0px;
@@ -331,12 +350,12 @@ h1 {
 }
 .DetallesProyectos>div{
  display: grid;
- grid-template-columns: 1fr 1fr;
+ grid-template-columns: 1fr;
+ align-items: start;
 
 }
 .DetallesProyectos>div>img{
     width: 100%;
-    
 }
 .DetallesProyectos>div>div>h3{
     text-align: center;
@@ -387,7 +406,10 @@ h1 {
 }
 
 .contactos {
-    width: 100%;
+    width: 80%;
+    height: 90%;
+    background: var(--menu);
+    border-radius: 16px;
     margin-top: 10px;
     text-align: center;
     padding-bottom: 20px;
@@ -396,8 +418,14 @@ h1 {
     align-items: center;
     color: var(--texto);
 }
+.contactos>h2{
+    position: absolute;
+    top: 0px;
+}
 
 .contactos ul {
+    position: absolute;
+    bottom: 0px;
     min-width: 100%;
     list-style: none;
     align-items: center;
@@ -421,6 +449,7 @@ h1 {
     padding: 0px;
     width: 80px;
     transition: all .8s ease;
+    max-width: 50px;
 
 }
 
@@ -431,12 +460,13 @@ h1 {
 }
 
 .contactos>nav {
-    position: relative;
+    position: absolute;
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .contact {
@@ -455,10 +485,16 @@ input {
     color: var(--texto);
     border: 3px solid var(--detalles);
     height: 30px;
+    outline: none;
 }
 
 .formContainer {
     padding: 20px;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    right: 10%;
+    
 }
 .formContainer>div:first-child {
     width: 100%;
@@ -492,6 +528,7 @@ textarea {
     border: 3px solid var(--detalles);
     background: var(--fondo);
     color: var(--texto);
+    outline: none;
 
 }
 
@@ -512,7 +549,11 @@ input[type="submit"]:hover {
     color: var(--fondo);
     border: 3px solid var(--fondo);
 }
-
+.autor{
+    color: var(--texto);
+    position: absolute;
+    bottom: 0px;
+}
 @keyframes opacidad {
     0% {
         opacity: 0;
@@ -543,7 +584,7 @@ input[type="submit"]:hover {
             "header main"
         ;
     }
-
+   
     
 
     .Inicio>div>p {
@@ -581,4 +622,9 @@ input[type="submit"]:hover {
        max-height: 300px;
         
     }
+    .DetallesProyectos>div{
+    grid-template-columns: 1fr 1fr;
+    }
+   
+    
 }
