@@ -1,3 +1,4 @@
+
 const menu = document.querySelectorAll("li")
 //Selectores de contenidos del menu
 const inicio = document.getElementById("contenedorInicio")
@@ -66,6 +67,5 @@ function viewProyect(e){
     localStorage.setItem("proyecIndex", index);
     nodo.style.backgroundColor = '#111421'
 
-    
 
 }

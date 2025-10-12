@@ -35,6 +35,8 @@ function cambio(idioma){
     sobreMiCambio(idioma)
     proyectosMenuCambio(idioma)
     proyectosCambio(idioma)
+
+        
 }
 
 //datos y funcion de inicio
