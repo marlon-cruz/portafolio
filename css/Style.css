@@ -292,7 +292,6 @@ h1 {
 .sobreMi>div>img:hover {
     scale: 1.06;
     box-shadow: 0 0 5px 5px var(--detalles);
-    /* box-shadow: 2px 2px 1px 1px var(--detalles); */
     transition: all 0.6s ease;
 }
 

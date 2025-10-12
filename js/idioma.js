@@ -327,12 +327,12 @@ const proyectDescripcionDatos = {
     }
  
 function proyectosCambio(idioma){
-    console.log(idioma)
+   
     const indiceProyect = localStorage.getItem("proyecIndex")
     if(idioma = "-1"){
         idioma = localStorage.getItem("idioma")
     }
-    console.log(idioma)
+   
     
     if(idioma == "ES"){
         proyectTitulo.innerText = proyectDescripcionDatos[indiceProyect].ES.titulo
