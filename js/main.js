@@ -12,7 +12,7 @@ menu.forEach(item => {
     item.addEventListener("click", (e) => {
 
         let element = e.currentTarget.id
-        console.log(element)
+       
         switch (element) {
             case "inicio":
                 contactame.style.display = "none"
@@ -47,3 +47,25 @@ menu.forEach(item => {
     })
 })
 
+const btnSoftware = document.getElementById('btnsoftware')
+const btnSiteWeb = document.getElementById('btnSitioWeb')
+const btnAppMovil = document.getElementById('btnAppMovil')
+const btnAppWeb = document.getElementById('btnAppWeb')
+
+function setColorBtn(){
+    btnSoftware.style.backgroundColor = "#1f253f"
+    btnSiteWeb.style.backgroundColor = "#1f253f"
+    btnAppMovil.style.backgroundColor = "#1f253f"
+    btnAppWeb.style.backgroundColor = "#1f253f"
+}
+
+function viewProyect(e){
+   setColorBtn()
+    const nodo = e.target;
+    let index = e.target.value
+    localStorage.setItem("proyecIndex", index);
+    nodo.style.backgroundColor = '#111421'
+
+    
+
+}
