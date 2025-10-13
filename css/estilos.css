@@ -31,12 +31,14 @@ body {
 }
 
 .contenedor {
-    width: 100vw;
-    height: 100vh;
-    margin: 0px;
-    padding: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 100%;
     grid-template-rows: 2fr 1fr;
     overflow: hidden;
 }
