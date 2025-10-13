@@ -268,8 +268,8 @@ const proyectDescripcionDatos = {
             tecnologias: "Tecnologias utilizadas",
             proyectoRol: "Rol desempeñado: desarrollador Frond-end y Back-end",
             tecnoList: 
-            '<li>HTML</li><li>CSS</li><li>JS - JavaScript</li>',
-            linkGithub: "https://github.com/marlon-cruz/proyecto",
+            '<li>HTML</li><li>CSS</li>',
+            linkGithub: "https://github.com/Alexis2025X/Web-Farmacia-Divino-Ni-o",
             },
            EN: {
             titulo: "Farmacia Divino Niño - Website",
@@ -278,8 +278,8 @@ const proyectDescripcionDatos = {
             proyectoRol: "Role played: Front-end and Back-end developer",
             tecnologias: "Technologies used",
             tecnoList: 
-            '<li>HTML</li><li>CSS</li><li>JS - JavaScript</li>',
-            linkGithub: "https://github.com/marlon-cruz/proyecto",
+            '<li>HTML</li><li>CSS</li>',
+            linkGithub: "https://github.com/Alexis2025X/Web-Farmacia-Divino-Ni-o",
             }
         },
         "2":{
@@ -291,7 +291,7 @@ const proyectDescripcionDatos = {
             proyectoRol: "Rol desempeñado: desarrollador Frond-end y Back-end",
             tecnoList: 
             '<li>Java</li><li>XML</li><li>Sqlite</li><li>CouchDB</li>',
-            linkGithub: "https://github.com/marlon-cruz/proyecto",
+            linkGithub: "https://github.com/Alexis2025X/PetCare_2.0",
             },
            EN: {
             titulo: "PetCare - Mobile application",
@@ -301,7 +301,7 @@ const proyectDescripcionDatos = {
             tecnologias: "Technologies used",
             tecnoList: 
             '<li>Java</li><li>XML</li><li>Sqlite</li><li>CouchDB</li>',
-            linkGithub: "https://github.com/marlon-cruz/proyecto",
+            linkGithub: "https://github.com/Alexis2025X/PetCare_2.0",
             }
         },
         "3":{
@@ -313,7 +313,7 @@ const proyectDescripcionDatos = {
             proyectoRol: "Rol desempeñado: desarrollador Frond-end y Back-end",
             tecnoList: 
             '<li>c#</li><li>.NET</li><li>HTML</li><li>CSS</li><li>BootStrap</li><li>Sql Server</li>',
-            linkGithub: "https://github.com/marlon-cruz/proyecto",
+            linkGithub: "https://github.com/Alexis2025X/Red_Esperanza_form/tree/WEB_2",
             },
            EN: {
             titulo: "Red de esperanza - Web Application",
@@ -323,7 +323,7 @@ const proyectDescripcionDatos = {
             tecnologias: "Technologies used",
             tecnoList: 
             '<li>c#</li><li>.NET</li><li>HTML</li><li>CSS</li><li>BootStrap</li><li>Sql Server</li>',
-            linkGithub: "https://github.com/marlon-cruz/proyecto",
+            linkGithub: "https://github.com/Alexis2025X/Red_Esperanza_form/tree/WEB_2",
             }
         }
     }

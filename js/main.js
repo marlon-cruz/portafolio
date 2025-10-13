@@ -1,4 +1,3 @@
-
 const menu = document.querySelectorAll("li")
 //Selectores de contenidos del menu
 const inicio = document.getElementById("contenedorInicio")
@@ -69,3 +68,36 @@ function viewProyect(e){
 
 
 }
+const alertError = [
+    {
+        titulo: "Error de formulario",
+        frase:'El formulario se encuentra inhabilitado temporalmente' ,
+    },
+    {
+        titulo: "Form error",
+        frase: 'The form is temporarily disabled',
+    }
+]
+
+document.getElementById("contacenviar").addEventListener("click",event =>{
+      event.preventDefault()
+    const idioma = localStorage.getItem("idioma")
+    let titulo = ""
+    let frase = ""
+    if(idioma == "ES"){
+        titulo = alertError[0].titulo
+        frase = alertError[0].frase
+    }else{
+        titulo = alertError[1].titulo
+        frase = alertError[1].frase
+    }
+    
+  
+        Swal.fire({
+        title: titulo,
+        text: frase,
+        icon:"error",
+        background: "#111421",
+        color: "#e6efff"
+    })
+})
