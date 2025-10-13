@@ -222,15 +222,15 @@ section {
     background: var(--fondo);
     color: var(--detalles);
     position: absolute;
-    top: 75vh;
-    left: 80vw;
+    top: 15vh;
+    left: 85vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     z-index: 1;
-    opacity: 0.2;
+    opacity: 0.5;
     text-decoration: none;
     transition: all 0.5s ease;
     border: 2px solid var(--detalles);
@@ -606,6 +606,7 @@ input[type="submit"]:hover {
 
     .idioma {
         top: 85vh;
+         opacity: 0.8;
     }
     .sobreMi>div>p{
       font-size: 1.2rem;
@@ -632,10 +633,6 @@ input[type="submit"]:hover {
     }
     .DetallesProyectos>div{
     grid-template-columns: 1fr 1fr;
-    }
-    .idioma{
-        opacity: 0.8;
-       
     }
     .formContainer{
         top: 15%;
