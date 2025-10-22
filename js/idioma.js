@@ -290,7 +290,7 @@ const proyectDescripcionDatos = {
             tecnologias: "Tecnologias utilizadas",
             proyectoRol: "Rol desempeñado: desarrollador Frond-end y Back-end",
             tecnoList: 
-            '<li>Java</li><li>XML</li><li>Sqlite</li><li>CouchDB</li>',
+            '<li>Java</li><li>XML</li><li>Sqlite</li><li>FireBase</li>',
             linkGithub: "https://github.com/Alexis2025X/PetCare_2.0",
             },
            EN: {
@@ -300,7 +300,7 @@ const proyectDescripcionDatos = {
             proyectoRol: "Role played: Front-end and Back-end developer",
             tecnologias: "Technologies used",
             tecnoList: 
-            '<li>Java</li><li>XML</li><li>Sqlite</li><li>CouchDB</li>',
+            '<li>Java</li><li>XML</li><li>Sqlite</li><li>FireBase</li>',
             linkGithub: "https://github.com/Alexis2025X/PetCare_2.0",
             }
         },
@@ -312,7 +312,7 @@ const proyectDescripcionDatos = {
             tecnologias: "Tecnologias utilizadas",
             proyectoRol: "Rol desempeñado: desarrollador Frond-end y Back-end",
             tecnoList: 
-            '<li>c#</li><li>.NET</li><li>HTML</li><li>CSS</li><li>BootStrap</li><li>Sql Server</li>',
+            '<li>C#</li><li>.NET</li><li>HTML</li><li>CSS</li><li>BootStrap</li><li>Sql Server</li><li>JS - JavaScript</li>',
             linkGithub: "https://github.com/Alexis2025X/Red_Esperanza_form/tree/WEB_2",
             },
            EN: {
@@ -322,7 +322,7 @@ const proyectDescripcionDatos = {
             proyectoRol: "Role played: Front-end and Back-end developer",
             tecnologias: "Technologies used",
             tecnoList: 
-            '<li>c#</li><li>.NET</li><li>HTML</li><li>CSS</li><li>BootStrap</li><li>Sql Server</li>',
+            '<li>C#</li><li>.NET</li><li>HTML</li><li>CSS</li><li>BootStrap</li><li>Sql Server</li><li>JS - JavaScript</li>',
             linkGithub: "https://github.com/Alexis2025X/Red_Esperanza_form/tree/WEB_2",
             }
         }
