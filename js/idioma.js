@@ -241,7 +241,7 @@ const proyectDescripcionDatos = {
         "0":{
            ES: {
             titulo: "Farmacia Divino Niño - Software",
-            imagen: 'img/imgProyect/software.png',
+            imagen: '<img src="img/imgProyect/software.png" alt="Proyecto Software Farmaceutico">',
             descripcion: "Software de gestión de inventario farmacéutico, enfocado en ventas y devoluciones de medicamentos, en sus distintas presentaciones, (Pastillas, Blíster, cajas) gestionando informes y alertas sobre cantidades y vencimientos de medicamentos en inventario.",
             tecnologias: "Tecnologias utilizadas",
             proyectoRol: "Rol desempeñado: desarrollador Frond-end y Back-end",
@@ -251,7 +251,7 @@ const proyectDescripcionDatos = {
             },
            EN: {
             titulo: "Farmacia Divino Niño - Software",
-            imagen: "img/imgProyect/software.png",
+            imagen: '<img src="img/imgProyect/software.png" alt="Proyecto Software Farmaceutico">',
             descripcion: "Pharmaceutical inventory management software focused on sales and returns of medications in various forms (pills, blisters, and boxes), managing reports and alerts on inventory quantities and expiration dates.",
             proyectoRol: "Role played: Front-end and Back-end developer",
             tecnologias: "Technologies used",
@@ -263,7 +263,7 @@ const proyectDescripcionDatos = {
         "1":{
            ES: {
             titulo: "Farmacia Divino Niño - Sitio Web",
-            imagen: 'img/imgProyect/web informativa.png',
+            imagen: '<img src="img/imgProyect/web informativa.png" alt="Proyecto web Informativa">',
             descripcion: "Pagina web informativa la cual presenta información sobre la filosofía empresarial, valores e identidad de marca, además de exponer algunos de los medicamentos más solicitados, para dar visibilidad a la farmacia en la web, especificando horarios de atención y ubicación.",
             tecnologias: "Tecnologias utilizadas",
             proyectoRol: "Rol desempeñado: desarrollador Frond-end y Back-end",
@@ -273,7 +273,7 @@ const proyectDescripcionDatos = {
             },
            EN: {
             titulo: "Farmacia Divino Niño - Website",
-            imagen: "img/imgProyect/web informativa.png",
+            imagen: '<img src="img/imgProyect/web informativa.png" alt="Proyecto web Informativa">',
             descripcion: "An informative website that presents information about the company's philosophy, values, and brand identity, as well as showcasing some of the most requested medications, to give the pharmacy visibility on the web, specifying its opening hours and location.",
             proyectoRol: "Role played: Front-end and Back-end developer",
             tecnologias: "Technologies used",
@@ -285,7 +285,7 @@ const proyectDescripcionDatos = {
         "2":{
            ES: {
             titulo: "PetCare - Aplicación movil",
-            imagen: 'img/imgProyect/PetCare.png',
+            imagen: '<img src="img/imgProyect/PetCare.png" alt="PetCare App movil">',
             descripcion: "Aplicación móvil que permite gestionar los datos de las mascotas, crear recordatorios sobre la aplicación de medicamentos y/o citas médicas, además de conocer la ubicación de veterinarias cercanas en caso de una emergencia.",
             tecnologias: "Tecnologias utilizadas",
             proyectoRol: "Rol desempeñado: desarrollador Frond-end y Back-end",
@@ -295,7 +295,7 @@ const proyectDescripcionDatos = {
             },
            EN: {
             titulo: "PetCare - Mobile application",
-            imagen: "img/imgProyect/PetCare.png",
+            imagen: '<img src="img/imgProyect/PetCare.png" alt="PetCare App movil">',
             descripcion: "Mobile app that allows you to manage pet data, create reminders for medication administration and/or medical appointments, and locate nearby veterinary clinics in case of an emergency.",
             proyectoRol: "Role played: Front-end and Back-end developer",
             tecnologias: "Technologies used",
@@ -307,7 +307,7 @@ const proyectDescripcionDatos = {
         "3":{
            ES: {
             titulo: "Red de esperanza - Aplicación Web",
-            imagen: 'img/imgProyect/red esperanza.jpeg',
+            imagen: '<img src="img/imgProyect/red esperanza.jpeg" alt="Red Esperanza">',
             descripcion: "Aplicación web enfocada en el servicio a la comunidad, donde las personas pueden informar sobre ciudadanos desaparecidos especificando fechas claras de desaparición, señas físicas, cantidad de fotografías, asegurando que la información pueda llegar a la mayor de personas posibles.\nLa aplicación también permite hacer anuncios de personas necesitadas, debido a desastres naturales y/o condiciones de vida adversas.",
             tecnologias: "Tecnologias utilizadas",
             proyectoRol: "Rol desempeñado: desarrollador Frond-end y Back-end",
@@ -317,7 +317,7 @@ const proyectDescripcionDatos = {
             },
            EN: {
             titulo: "Red de esperanza - Web Application",
-            imagen: "img/imgProyect/red esperanza.jpeg",
+            imagen: '<img src="img/imgProyect/red esperanza.jpeg" alt="Red Esperanza">',
             descripcion: "A web application focused on community service, where people can report missing citizens by specifying clear dates of disappearance, physical characteristics, and a number of photographs, ensuring that the information reaches as many people as possible.\nThe application also allows people to make announcements about people in need due to natural disasters and/or adverse living conditions.",
             proyectoRol: "Role played: Front-end and Back-end developer",
             tecnologias: "Technologies used",
@@ -338,7 +338,7 @@ function proyectosCambio(idioma){
     
     if(idioma == "ES"){
         proyectTitulo.innerText = proyectDescripcionDatos[indiceProyect].ES.titulo
-        proyectImg.src = proyectDescripcionDatos[indiceProyect].ES.imagen
+        proyectImg.innerHTML = proyectDescripcionDatos[indiceProyect].ES.imagen
         proyectDescripcion.innerText = proyectDescripcionDatos[indiceProyect].ES.descripcion
         proyectoTecno.innerText = proyectDescripcionDatos[indiceProyect].ES.tecnologias
         proyectoRol.innerText = proyectDescripcionDatos[indiceProyect].ES.proyectoRol
@@ -346,7 +346,7 @@ function proyectosCambio(idioma){
         ProyectlickGithub.href = proyectDescripcionDatos[indiceProyect].ES.linkGithub
     }else{
         proyectTitulo.innerText = proyectDescripcionDatos[indiceProyect].EN.titulo
-        proyectImg.src = proyectDescripcionDatos[indiceProyect].EN.imagen
+        proyectImg.innerHTML = proyectDescripcionDatos[indiceProyect].EN.imagen
         proyectDescripcion.innerText = proyectDescripcionDatos[indiceProyect].EN.descripcion
         proyectoRol.innerText = proyectDescripcionDatos[indiceProyect].EN.proyectoRol
         proyectoTecno.innerText = proyectDescripcionDatos[indiceProyect].EN.tecnologias

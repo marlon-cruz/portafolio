@@ -223,7 +223,7 @@ section {
     color: var(--detalles);
     position: absolute;
     top: 15vh;
-    left: 85vw;
+    left: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -234,6 +234,19 @@ section {
     text-decoration: none;
     transition: all 0.5s ease;
     border: 2px solid var(--detalles);
+}
+.idioma::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0vh;
+    left: 0vw;
+    border-radius: 100%;
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
 }
 
 .idioma>img {
@@ -362,8 +375,9 @@ h1 {
  align-items: start;
 
 }
-.DetallesProyectos>div>img{
+.DetallesProyectos>div>div>img{
     width: 100%;
+    
 }
 .DetallesProyectos>div>div>h3{
     text-align: center;
@@ -561,6 +575,33 @@ input[type="submit"]:hover {
     color: var(--texto);
     position: absolute;
     bottom: 0px;
+}
+
+@keyframes pulse {
+    0%{
+        border: 0px;
+        scale: 1.2;
+        border-left: 1px solid var(--detalles);
+        border-right: 1px solid var(--detalles);
+        border-bottom: 0px solid var(--detalles);
+        border-top: 0px solid var(--detalles);
+    }
+    50%{
+        border: 0px;
+        scale: 1.4;
+        border-left: 1px solid var(--detalles);
+        border-right: 1px solid var(--detalles);
+        border-bottom: 0px solid var(--detalles);
+        border-top: 0px solid var(--detalles);
+    }
+    100%{
+        border: 0px;
+        scale: 1.2;
+        border-left: 1px solid var(--detalles);
+        border-right: 1px solid var(--detalles);
+        border-bottom: 0px solid var(--detalles);
+        border-top: 0px solid var(--detalles);
+    }
 }
 @keyframes opacidad {
     0% {
