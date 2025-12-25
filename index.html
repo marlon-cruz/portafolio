@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="icon" href="img/logo personal.png">
     <script defer src="js/main.js"></script>
     <script defer src="js/idioma.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,8 +29,8 @@
             <li id="proyectos"><img src="img/code-solid-full.svg" class="icon" alt="Projectos">
                 <p id="menuproyectos">Projectos</p>
             </li>
-            <li id="intereses"><img src="img/person-rays-solid-full.svg" class="icon" alt="intereses">
-                <p id="menuintereses">intereses</p>
+            <li id="Recommendations"><img src="img/reseñas.png" class="icon" alt="Projectos">
+                <p id="menuRecommendacion">Reseñas</p>
             </li>
             <li id="contactame"><img src="img/address-card-solid-full.svg" class="icon" alt="contactame">
                 <p id="menucontacto">contactame</p>
@@ -71,6 +72,34 @@
                     cooperación.
                     Contando con conosimientos en: C#, HTML, CSS, JS - JavaScript y bases de datos SQL.
                 </p>
+                <h2 id="titlePremiosReco">premios y reconocimientos</h2>
+                <div class="contentRerecoFather">
+                <div class="contentpremio">
+                    <div onclick="zoomImagen(event)">
+                    <img  src="img/imagen reconocimientos/Cum.png" alt="Reconocimiento">
+                    </div>
+                    <h3 id="reco1">Mejor CUM</h3>
+                </div>
+                <div class="contentpremio">
+                     <div onclick="zoomImagen(event)">
+                    <img src="img/imagen reconocimientos/Taller.jpeg" alt="Reconocimiento">
+                    </div>
+                    <h3 id="reco2">Conclución de talleres</h3>
+                </div>
+                <div class="contentpremio">
+                     <div onclick="zoomImagen(event)">
+                    <img src="img/imagen reconocimientos/cisco.png" alt="Reconocimiento">
+                    </div>
+                    <h3 id="reco3">Certificación cisco</h3>
+                </div>
+                 <div class="contentpremio">
+                    <div onclick="zoomImagen(event)">
+                    <img  src="img/imagen reconocimientos/mejor Cum.jpeg" alt="Reconocimiento">
+                    </div>
+                    <h3 id="reco4">Mejor CUM</h3>
+                </div>
+                </div>
+                
             </div>
             
 
@@ -109,11 +138,62 @@
         </article>
             
         </section>
+        <div id="recomendaciones" class="recomendaciones">
+            <h2 id="titleresena">Reseñas</h2>
+            <div class="contentCardReco">
+<div class="contentReco">
+    <div>
+        <img src="img/imagePerson/Osmaro.jpeg" alt="">
+        <h2>Ing. Marvin Parada</h2>
+        <p id="rese1">Durante el tiempo que tuve la oportunidad de conocerlo, demostró ser un estudiante
+disciplinado, comprometido con su desarrollo académico y con un interés genuino por el
+estudio.</p>
+    </div>
+</div>
+<div class="contentReco">
+    <div>
+        <img src="img/imagePerson/Azucena.jpeg" alt="">
+        <h2>Azucena Rodríguez</h2>
+        <p id="rese2">Ha sido una grata experiencia,  trabajo de manera rápida, demostrando conocimientos sobre su área y su atención al mis necesidades llevo a solucionar a lo que necesitaba.</p>
+    </div>
+</div>
+<div class="contentReco">
+    <div>
+        <img src="img/imagePerson/torres.jpeg" >
+        <h2>
+            Oscar   <br/> Torres</h2>
+        <p id="rese3">
+            Afirmo que él es una persona de excelente conducta, excelente en su estudio, honrado, intachable, responsable en todos sus actos y dispuesta a compartir todos sus conocimientos a una sociedad en progreso.
+        </p>
+    </div>
+</div>
+<div class="contentReco">
+    <div>
+        <img src="img/imagePerson/Francisco.png" >
+        <h2>Francisco Cortes</h2>
+        <p id="rese4">
+            Marlon es un joven, muy inteligente y con pensamiento crítico, me ha asistido cuando he tenido problemas con mi computadora demostrando que es capaz de enfrentar y resolver problemas informáticos de forma eficiente y efectiva
+        </p>
+    </div>
+</div>
+<div class="contentReco">
+    <div>
+        <img src="img/imagePerson/Josue.jpeg" >
+        <h2>Josue Medrano</h2>
+        <p id="rese5">
+            Es un joven muy inteligente y con pensamiento crítico. Me ha asistido cuando he tenido consultas o problemas relacionadas mi computadora, demostrando que es capaz de comprender, enfrentar y resolver este tipo de problemas.
+        </p>
+    </div>
+</div>
+
+</div>
+
+        </div>
 
         <section class="contactos" id="contacto">
 
             <h2 id="contactitulo">Contactame</h2>
-            <form action="" method="post">
+            <form action="https://formspree.io/f/xdkqzokz" method="post">
                 <div class="formContainer">
                     <div>
                         <label for="nombre" id="contacnombre">Nombre</label>
@@ -122,7 +202,7 @@
                         <input type="email" name="correo" id="correo">
                     </div>
                     <label for="comentario" id="contaccomentario">Comentario</label>
-                    <textarea a name="comentario" id="comentario"></textarea>
+                    <textarea name="comentario" id="comentario"></textarea>
                     <input type="submit" id="contacenviar" value="Enviar">
                 </div>
             </form>

@@ -35,7 +35,8 @@ function cambio(idioma){
     sobreMiCambio(idioma)
     proyectosMenuCambio(idioma)
     proyectosCambio(idioma)
-
+    reconocimientoCambio(idioma)
+    resenaCambio(idioma)
         
 }
 
@@ -75,21 +76,21 @@ function inicioCambio(idioma){
 const menuInicio = document.getElementById("menuInicio");
 const menuSobreMi = document.getElementById("menusobre");
 const menuProyecto = document.getElementById("menuproyectos");
-const menuIntereses = document.getElementById("menuintereses");
+const menuRecommendations = document.getElementById("menuRecommendacion");
 const menuContactame = document.getElementById("menucontacto");
 const menuDatos = [
     {
         Inicio: "Inicio",
         SobreMi:' Sobre Mi' ,
         Projectos: 'Projectos',
-        intereses: 'Intereses',
+        recomendacion: 'Reseñas',
         contactame: 'Contactame'
     },
     {
         Inicio: "Home",
         SobreMi:'About me' ,
         Projectos: 'Projects',
-        intereses: 'Interests',
+        recomendacion: 'Reviews',
         contactame: 'Contact me'   
     }
 ]
@@ -98,13 +99,13 @@ function menuCambio(idioma){
         menuInicio.innerText = menuDatos[0].Inicio
         menuSobreMi.innerText = menuDatos[0].SobreMi
         menuProyecto.innerText = menuDatos[0].Projectos
-        menuIntereses.innerText = menuDatos[0].intereses
+        menuRecommendations.innerText = menuDatos[0].recomendacion
         menuContactame.innerText = menuDatos[0].contactame
     }else{
         menuInicio.innerText = menuDatos[1].Inicio
         menuSobreMi.innerText = menuDatos[1].SobreMi
         menuProyecto.innerText = menuDatos[1].Projectos
-        menuIntereses.innerText = menuDatos[1].intereses
+        menuRecommendations.innerText = menuDatos[1].recomendacion
         menuContactame.innerText = menuDatos[1].contactame
     }
 }
@@ -352,5 +353,89 @@ function proyectosCambio(idioma){
         proyectoTecno.innerText = proyectDescripcionDatos[indiceProyect].EN.tecnologias
         proyectTecnoList.innerHTML = proyectDescripcionDatos[indiceProyect].EN.tecnoList
         ProyectlickGithub.href = proyectDescripcionDatos[indiceProyect].EN.linkGithub
+    }
+}
+
+const titleReco = document.getElementById("titlePremiosReco");
+const reco1 = document.getElementById("reco1");
+const reco2 = document.getElementById("reco2");
+const reco3 = document.getElementById("reco3");
+const reco4 = document.getElementById("reco4");
+
+const reconocimientoDatos = [
+    {
+        titleReco: "premios y reconocimientos",
+        reco1: "Mejor CUM",
+        reco2: "Conclusión de talleres",
+        reco3: "Certificación CISCO",
+        reco4: "Mejor CUM",
+    },
+     {
+        titleReco: "awards and recognitions",
+        reco1: "Best CUM",
+        reco2: "Workshop conclusions",
+        reco3: "Cisco Certification",
+        reco4: "Best CUM",
+    }
+]
+
+function reconocimientoCambio(idioma){
+ if(idioma == "EN"){
+        titleReco.innerText = reconocimientoDatos[0].titleReco
+        reco1.innerText = reconocimientoDatos[0].reco1
+        reco2.innerText = reconocimientoDatos[0].reco2
+        reco3.innerText = reconocimientoDatos[0].reco3
+        reco4.innerText = reconocimientoDatos[0].reco4
+    }else{
+        titleReco.innerText = reconocimientoDatos[1].titleReco
+        reco1.innerText = reconocimientoDatos[1].reco1
+        reco2.innerText = reconocimientoDatos[1].reco2
+        reco3.innerText = reconocimientoDatos[1].reco3
+        reco4.innerText = reconocimientoDatos[1].reco4
+    }
+}
+
+
+const titleRese = document.getElementById("titleresena");
+const rese1 = document.getElementById("rese1");
+const rese2 = document.getElementById("rese2");
+const rese3 = document.getElementById("rese3");
+const rese4 = document.getElementById("rese4");
+const rese5 = document.getElementById("rese5");
+
+const resenaDatos = [
+    {
+        titleRese: "Reseña",
+        rese1: "Durante el tiempo que tuve la oportunidad de conocerlo, demostró ser un estudiante disciplinado, comprometido con su desarrollo académico y con un interés genuino por el estudio.",
+        rese2: "Ha sido una grata experiencia,  trabajo de manera rápida, demostrando conocimientos sobre su área y su atención al mis necesidades llevo a solucionar a lo que necesitaba",
+        rese3: "Afirmo que él es una persona de excelente conducta, excelente en su estudio, honrado, intachable, responsable en todos sus actos y dispuesta a compartir todos sus conocimientos a una sociedad en progreso.",
+        rese4: "Marlon es un joven, muy inteligente y con pensamiento crítico, me ha ayudado cuando tuvo problemas con mi computadora demostrando que es capaz de enfrentar y resolver problemas informáticos de forma eficiente y efectiva.",
+        rese5: "Es un joven muy inteligente y con pensamiento crítico. Me ha asistido cuando he tenido consultas o problemas relacionadas mi computadora, demostrando que es capaz de comprender, enfrentar y resolver este tipo de problemas.",
+    },
+     {
+        titleRese: "Review",
+        rese1: "During the time I had the opportunity to know him, he proved to be a disciplined student, committed to his academic development and with a genuine interest in studying.",
+        rese2: "It has been a pleasant experience. He worked quickly, demonstrating knowledge in his area, and his attention to my needs led to a solution to what I required.",
+        rese3: "I affirm that he is a person of excellent conduct, excellent in his studies, honest, irreproachable, responsible in all his actions and willing to share all his knowledge with a society in progress.",
+        rese4: "Marlon is a young, very intelligent, and critical thinker. He has helped me when I had problems with my computer, demonstrating that he is capable of facing and solving computer problems efficiently and effectively.",
+        rese5: "He is a very intelligent young man with critical thinking skills. He has assisted me when I've had questions or problems related to my computer, demonstrating his ability to understand, address, and resolve these types of issues.",
+    }
+]
+
+function resenaCambio(idioma){
+ if(idioma == "EN"){
+        titleRese.innerText = resenaDatos[0].titleRese
+        rese1.innerText = resenaDatos[0].rese1
+        rese2.innerText = resenaDatos[0].rese2
+        rese3.innerText = resenaDatos[0].rese3
+        rese4.innerText = resenaDatos[0].rese4
+        rese5.innerText = resenaDatos[0].rese5
+    }else{
+        titleRese.innerText = resenaDatos[1].titleRese
+        rese1.innerText = resenaDatos[1].rese1
+        rese2.innerText = resenaDatos[1].rese2
+        rese3.innerText = resenaDatos[1].rese3
+        rese4.innerText = resenaDatos[1].rese4
+        rese5.innerText = resenaDatos[1].rese5
     }
 }

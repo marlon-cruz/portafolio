@@ -6,6 +6,8 @@ const proyectos = document.getElementById("proyect")
 //const intereses = document.getElementById()
 const contactame = document.getElementById("contacto")
 
+const recomendaciones = document.getElementById("recomendaciones")
+
 
 
 menu.forEach(item => {
@@ -18,19 +20,31 @@ menu.forEach(item => {
                 contactame.style.display = "none"
                 sobremi.style.display = "none"
                 proyectos.style.display = "none"
+                recomendaciones.style.display = "none"
                 inicio.style.display = "flex"
                 break;
             case "sobre_Mi":
                 inicio.style.display = "none"
                 contactame.style.display = "none"
                 proyectos.style.display = "none"
+                recomendaciones.style.display = "none"
                 sobremi.style.display = "flex"
                 break;
             case "contactame":
                 inicio.style.display = "none"
                 sobremi.style.display = "none"
                 proyectos.style.display = "none"
+                recomendaciones.style.display = "none"
                 contactame.style.display = "flex"
+
+                break;
+             case "Recommendations":
+                inicio.style.display = "none"
+                sobremi.style.display = "none"
+                contactame.style.display = "none"
+                proyectos.style.display = "none"
+                recomendaciones.style.display = "flex"
+                
                 break;
 
             case "proyectos":
@@ -38,6 +52,7 @@ menu.forEach(item => {
                 sobremi.style.display = "none"
                 contactame.style.display = "none"
                 proyectos.style.display = "flex"
+                recomendaciones.style.display = "none"
 
                 break;
             default:
@@ -79,25 +94,15 @@ const alertError = [
     }
 ]
 
-document.getElementById("contacenviar").addEventListener("click",event =>{
-      event.preventDefault()
-    const idioma = localStorage.getItem("idioma")
-    let titulo = ""
-    let frase = ""
-    if(idioma == "ES"){
-        titulo = alertError[0].titulo
-        frase = alertError[0].frase
-    }else{
-        titulo = alertError[1].titulo
-        frase = alertError[1].frase
+function zoomImagen(event){
+    let elemento = event.target;
+    if (elemento.tagName === 'IMG') {
+       elemento = elemento.parentElement; 
     }
-    
-  
-        Swal.fire({
-        title: titulo,
-        text: frase,
-        icon:"error",
-        background: "#111421",
-        color: "#e6efff"
-    })
-})
+    const tieneClase = elemento.classList.contains('imagen_zoom');
+    if (tieneClase) {
+        elemento.classList.remove('imagen_zoom')
+    } else {
+        elemento.classList.add('imagen_zoom')
+    }
+}
