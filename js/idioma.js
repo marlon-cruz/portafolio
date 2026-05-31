@@ -82,14 +82,14 @@ const menuDatos = [
     {
         Inicio: "Inicio",
         SobreMi:' Sobre Mi' ,
-        Projectos: 'Projectos',
+        Proyectos: 'Proyectos',
         recomendacion: 'Reseñas',
         contactame: 'Contactame'
     },
     {
         Inicio: "Home",
         SobreMi:'About me' ,
-        Projectos: 'Projects',
+        Proyectos: 'Projects',
         recomendacion: 'Reviews',
         contactame: 'Contact me'   
     }
@@ -98,13 +98,13 @@ function menuCambio(idioma){
     if(idioma == "EN"){
         menuInicio.innerText = menuDatos[0].Inicio
         menuSobreMi.innerText = menuDatos[0].SobreMi
-        menuProyecto.innerText = menuDatos[0].Projectos
+        menuProyecto.innerText = menuDatos[0].Proyectos
         menuRecommendations.innerText = menuDatos[0].recomendacion
         menuContactame.innerText = menuDatos[0].contactame
     }else{
         menuInicio.innerText = menuDatos[1].Inicio
         menuSobreMi.innerText = menuDatos[1].SobreMi
-        menuProyecto.innerText = menuDatos[1].Projectos
+        menuProyecto.innerText = menuDatos[1].Proyectos
         menuRecommendations.innerText = menuDatos[1].recomendacion
         menuContactame.innerText = menuDatos[1].contactame
     }
